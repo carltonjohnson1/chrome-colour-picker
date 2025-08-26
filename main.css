@@ -1,0 +1,157 @@
+
+/* CSS RESETS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+ol, ul {
+	list-style: none;
+}
+
+
+body {
+     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+     font-size: 100%;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     min-height: 100vh;
+}
+
+
+/* ROOT */
+
+:root {
+
+    /* COLORS */
+    --white: #fff;
+    --black: #000;
+    --primary-color: #e3f2fd;
+    --secondary-color: #5372f0;
+
+
+    /* FONT SIZES */
+    --font-size-s: 0.9rem;
+    --font-size-n: 1rem;  
+    --font-size-m: 1.125rem;
+    --font-size-l: 2.25rem;
+  
+    /* FONT WEIGHT */
+    --font-weight-normal: 400;
+    --font-weight-medium: 500;
+    --font-weight-semibold: 600;
+
+ 
+    /* BORDER RADIUS */
+    --border-radius-s: 5px;
+    --border-radius-m: 8px;
+    --border-radius-l: 16px;
+    --border-radius-circle: 50%;
+}
+
+/* GENERAL CSS */
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+/* IMAGES */
+
+img {
+    width: 100%;
+}
+
+
+
+
+/* LINKS */
+
+a {
+    text-decoration: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+/* General */
+
+.popup {
+    width: 350px;
+}
+
+
+.popup :where(.picker, header, .all-colors, .color) {
+    display: flex;
+    align-items: center;
+
+
+}
+
+.popup .picker {
+    background: var(--primary-color);
+    padding: 30px 0px;
+    justify-content: center;
+}
+
+
+.picker #color-picker {
+    outline: none;
+    border: none;
+    background: var(--secondary-color);
+    color: var(--white);
+    padding: 10px 20px;
+    font-size: var(--font-size-n);
+    border-radius: var(--border-radius-s);
+}
+
+.picked-colors {
+    margin: 10px 15px;
+
+}
+
+.picked-colors header {
+    justify-content: space-between;
+
+}
+
+.picked-colors .clear-all {
+    color: var(--secondary-color);
+    font-size: var(--font-size-s)
+}
+
+.all-colors {
+    margin: 10px 0px;
+    flex-wrap: wrap;
+}
+
+.all-colors .color {
+    width: calc(100% / 3);
+    margin-bottom: 10px;
+}
+
+.all-colors .color .rect {
+    display: block;
+    height: 22px;
+    width: 22px;
+    border-radius: var(--border-radius-s);
+    margin-right: 8px;
+}
+
+.all-colors .color .value {
+    font-size: var(--font-size-s);
+    font-weight: var(--font-weight-medium);
+    text-transform: uppercase;
+
+
+}
+
+
+
+
+
+

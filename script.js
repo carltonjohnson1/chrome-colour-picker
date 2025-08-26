@@ -1,0 +1,32 @@
+const colorPickerBtn = document.querySelector("#color-picker");
+const colorList = document.querySelector(".all-colors");
+const pickedColors = JSON.parse(localStorage.getItem("picked-colors") || "[]");
+
+const showColors = () => {
+    colorList.innerHTML = pickedColors.map(color => `
+         <li class="color">
+            <span class="rect" style="background: ${color}; border: 1px solid ${color == "FFFFFF" ? "#ccc" : color}"></span>
+            <span class="value">${color}</span>
+          </li>
+        `).join("");// Generating li for the picked colour and adding it to the colorList
+}
+showColors();
+
+const activateEyeDropper = async () => {
+    try {
+        // Opening the eye dropper and getting the selected colur
+        const eyeDropper = new EyeDropper();
+        const { sRGBHex } = await eyeDropper.open();
+        navigator.clipboard.writeText(sRGBHex);
+
+        pickedColors.push(sRGBHex);
+       localStorage.setItem("picked-colors", JSON.stringify(pickedColors));
+    } catch (error) {
+        console.log(error);
+        showColors();
+    }
+}
+
+colorPickerBtn.addEventListener("click", activateEyeDropper);
+
+// evidence that all okay 
