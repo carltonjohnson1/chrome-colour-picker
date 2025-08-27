@@ -1,13 +1,9 @@
-# C & B Collabs
+# Chrome Extension Colour Picker
 
-### Desktop
-
-![screenshot to come](./images/preview-screenshot.jpg)
+![Preview Screenshot](preview-screenshot.png)
 
 ## Content
 
-This was completed as my final project in a 10 week course I completed on becoming a Front-end Developer. The course was run by [General Assembly](https://generalassemb.ly/students/courses/front-end-web-development-short-course/london).
+This is a Chrome extension colour picker created based on a youtube video done by [CodingNepal](https://youtu.be/coj-l7IrwGU?si=fNbBFHQKLu_rnTGB).
 
-This project was focused on working on showcasing all the skills I'd learned during the 10 week course, so HTML, CSS and Javascript, without using any frameworks just pure code.
-
-I focused this project on highlighting some of the projects we'd worked on during the 10 weeks as well as displaying some of the skills I'd picked up from other study during the 10 weeks.
+I wanted to gain more knowledge on how to create a chrome extension so I followed the video to create the extension. In the future I'll likely adapt it further to make it more unique to me.
