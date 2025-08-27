@@ -1,7 +1,7 @@
 {
     "manifest_version": 3,
-    "name": "Carlton's Color Picker",
-    "description": "A simple color picker extension. Easily pick any color of the screen, view the chosen colors, and copy or clear them with a single click.",
+    "name": "Carlton's Colour Picker",
+    "description": "A simple colour picker extension. Easily pick any color of the screen, view the chosen colors, and copy or clear them with a single click.",
     "version": "1.0",
     "action": {
         "default_popup": "index.html"
